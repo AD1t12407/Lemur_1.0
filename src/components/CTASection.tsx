@@ -154,11 +154,10 @@ const CTASection: React.FC = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-1 gap-8 max-w-3xl mx-auto">
             {[
-              { number: "2,847", label: "Companies on Waitlist" },
-              { number: "24hrs", label: "Average Response Time" },
-              { number: "30 days", label: "Free Trial Period" }
+              { number: "Coming Soon", label: "Early Access Program" },
+              
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}

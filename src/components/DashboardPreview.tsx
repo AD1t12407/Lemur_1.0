@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Database, ArrowRight, Search, Shield, Brain } from 'lucide-react';
+import { Database, ArrowRight, Search, Shield, Brain, Bot, Zap } from 'lucide-react';
 
 const DashboardPreview: React.FC = () => {
   return (
@@ -35,7 +35,8 @@ const DashboardPreview: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
             className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white leading-[0.9] tracking-tight mb-8"
           >
-            We learn about
+            Your company's brain.
+           
             <br />
             <motion.span 
               className="bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent"
@@ -43,7 +44,7 @@ const DashboardPreview: React.FC = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
             >
-              you.
+               Always learning. Always ready.
             </motion.span>
           </motion.h2>
 
@@ -63,21 +64,21 @@ const DashboardPreview: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-32">
           {[
             {
-              icon: Database,
-              title: "Smart Data Ingestion",
-              description: "Automatically processes all your communications to build comprehensive knowledge.",
-              color: "text-purple-500"
-            },
-            {
-              icon: Search,
-              title: "Intelligent Search",
-              description: "Find any information instantly with AI-powered semantic understanding.",
+              icon: Bot,
+              title: "Data Ingestion Bot",
+              description: "Automatically captures and processes all your client communications, meetings, and documents in real-time.",
               color: "text-blue-500"
             },
             {
-              icon: Shield,
-              title: "Secure & Private",
-              description: "Enterprise-grade security with complete data encryption and control.",
+              icon: Brain,
+              title: "Knowledge Hub",
+              description: "Centralized intelligence that learns from every interaction, building your organization's collective consulting expertise.",
+              color: "text-purple-500"
+            },
+            {
+              icon: Zap,
+              title: "AI Actionable Tools",
+              description: "Generate SOWs, proposals, and follow-up emails instantly using contextual intelligence from your knowledge base.",
               color: "text-green-500"
             }
           ].map((feature, index) => (
@@ -118,55 +119,8 @@ const DashboardPreview: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           viewport={{ once: true }}
           className="mb-20"
-        >
-          <div className="bg-white dark:bg-gray-900 backdrop-blur-xl border border-gray-200 dark:border-gray-700 rounded-3xl p-16 text-center shadow-lg">
+        >{/* Central value proposition */}
             
-            {/* Central value proposition */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              className="max-w-4xl mx-auto"
-            >
-              <h3 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
-                Your company's brain.
-                <br />
-                <span className="text-gray-600 dark:text-gray-400">
-                  Always learning. Always ready.
-                </span>
-              </h3>
-              
-              <p className="text-xl text-gray-600 dark:text-gray-300 mb-12 leading-relaxed">
-                Lemur transforms scattered information into organized intelligence, 
-                making your entire organization smarter with every interaction.
-              </p>
-
-              {/* Key metrics grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-                <motion.div
-                  whileHover={{ y: -5 }}
-                  className="text-center"
-                >
-                  <div className="text-3xl font-bold text-purple-500 mb-2">100%</div>
-                  <div className="text-gray-600 dark:text-gray-400">Data Captured</div>
-                </motion.div>
-                <motion.div
-                  whileHover={{ y: -5 }}
-                  className="text-center"
-                >
-                  <div className="text-3xl font-bold text-blue-500 mb-2">Instant</div>
-                  <div className="text-gray-600 dark:text-gray-400">Search Results</div>
-                </motion.div>
-                <motion.div
-                  whileHover={{ y: -5 }}
-                  className="text-center"
-                >
-                  <div className="text-3xl font-bold text-green-500 mb-2">Secure</div>
-                  <div className="text-gray-600 dark:text-gray-400">Always Private</div>
-                </motion.div>
-              </div>
-            </motion.div>
-          </div>
         </motion.div>
 
         {/* Clean CTA */}

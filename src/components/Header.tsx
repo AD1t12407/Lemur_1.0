@@ -41,11 +41,11 @@ const Header: React.FC = () => {
               whileHover={{ rotate: [0, -5, 5, 0] }}
               transition={{ duration: 0.6, ease: "easeInOut" }}
             >
-              <div className="absolute inset-0 bg-white dark:bg-gray-800 rounded-xl opacity-90 dark:opacity-100 transition-all duration-500"></div>
+              <div className="absolute inset-0 bg-white dark:bg-gray-900 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 transition-all duration-500"></div>
               <img 
                 src="/logo_lemur.png" 
                 alt="Lemur AI" 
-                className="relative h-12 w-12 object-contain p-1 transition-all duration-500"
+                className="relative h-14 w-14 object-contain p-2 transition-all duration-500 filter drop-shadow-sm"
               />
             </motion.div>
             

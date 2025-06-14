@@ -1,17 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MessageSquare, Video, FileText, Calendar, Database, Zap, Globe, ArrowRight } from 'lucide-react';
+import { Mail, MessageSquare, Video, FileText, Calendar, Database, Zap, Globe, ArrowRight, Users, Briefcase } from 'lucide-react';
 
 const Integrations: React.FC = () => {
   const consultingTools = [
-    { name: 'Gmail', icon: Mail, color: 'text-red-500 dark:text-red-400' },
+    { name: 'Google Workspace', icon: Mail, color: 'text-red-500 dark:text-red-400' },
+    { name: 'Microsoft Teams', icon: Video, color: 'text-blue-500 dark:text-blue-400' },
     { name: 'Slack', icon: MessageSquare, color: 'text-purple-500 dark:text-purple-400' },
-    { name: 'Zoom', icon: Video, color: 'text-blue-500 dark:text-blue-400' },
-    { name: 'Google Drive', icon: FileText, color: 'text-green-500 dark:text-green-400' },
-    { name: 'Calendar', icon: Calendar, color: 'text-orange-500 dark:text-orange-400' },
-    { name: 'Notion', icon: Database, color: 'text-gray-600 dark:text-gray-400' },
-    { name: 'Zapier', icon: Zap, color: 'text-yellow-500 dark:text-yellow-400' },
-    { name: 'Teams', icon: Globe, color: 'text-blue-600 dark:text-blue-500' }
+    { name: 'Zoom', icon: Users, color: 'text-blue-600 dark:text-blue-500' },
+    { name: 'Salesforce', icon: Briefcase, color: 'text-orange-500 dark:text-orange-400' }
   ];
 
   return (
@@ -71,7 +68,7 @@ const Integrations: React.FC = () => {
         </motion.div>
 
         {/* Integration Icons - Floating Grid */}
-        <div className="grid grid-cols-4 md:grid-cols-8 gap-6 mb-32 max-w-4xl mx-auto">
+        <div className="grid grid-cols-3 md:grid-cols-5 gap-8 mb-32 max-w-4xl mx-auto justify-items-center">
           {consultingTools.map((tool, index) => (
             <motion.div
               key={tool.name}
@@ -89,14 +86,14 @@ const Integrations: React.FC = () => {
               }}
               className="group text-center"
             >
-              <div className="w-16 h-16 bg-white dark:bg-gray-900 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 flex items-center justify-center group-hover:shadow-xl transition-all duration-300">
-                <tool.icon className={`h-8 w-8 ${tool.color}`} />
+              <div className="w-20 h-20 bg-white dark:bg-gray-900 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 flex items-center justify-center group-hover:shadow-xl transition-all duration-300">
+                <tool.icon className={`h-10 w-10 ${tool.color}`} />
               </div>
               <motion.span 
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: index * 0.1 + 0.3 }}
-                className="text-sm text-gray-600 dark:text-gray-400 mt-2 block"
+                className="text-sm text-gray-600 dark:text-gray-400 mt-3 block font-medium"
               >
                 {tool.name}
               </motion.span>
@@ -105,57 +102,7 @@ const Integrations: React.FC = () => {
         </div>
 
         {/* Three Key Benefits for Consultants */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-32">
-          {[
-            {
-              icon: Zap,
-              title: "Setup in Minutes",
-              description: "No IT department needed. Connect your tools with a few clicks and get back to billing hours.",
-              color: "text-blue-500"
-            },
-            {
-              icon: Database,
-              title: "Client Data Stays Put",
-              description: "Your existing client files and communications stay exactly where they are—just smarter.",
-              color: "text-green-500"
-            },
-            {
-              icon: Globe,
-              title: "Scales With You",
-              description: "From solo practitioner to 50-person firm, Lemur grows without changing how you work.",
-              color: "text-purple-500"
-            }
-          ].map((feature, index) => (
-            <motion.div
-              key={feature.title}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.2, ease: "easeOut" }}
-              viewport={{ once: true }}
-              className="text-center group"
-            >
-              {/* Icon */}
-              <motion.div
-                className="flex flex-col items-center mb-8"
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.3 }}
-              >
-                <div className="w-20 h-20 bg-white dark:bg-gray-900 rounded-full shadow-lg border border-gray-200 dark:border-gray-700 flex items-center justify-center mb-6 group-hover:shadow-xl transition-shadow duration-300">
-                  <feature.icon className={`h-10 w-10 ${feature.color}`} />
-                </div>
-              </motion.div>
-
-              {/* Content */}
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                {feature.title}
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                {feature.description}
-              </p>
-            </motion.div>
-          ))}
-        </div>
-
+       
         {/* Single Feature Showcase */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -174,25 +121,25 @@ const Integrations: React.FC = () => {
               className="max-w-4xl mx-auto"
             >
               <h3 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
-                Your tools. Your workflow.
+                Works with your existing
                 <br />
                 <span className="text-gray-600 dark:text-gray-400">
-                  Just way smarter.
+                  consulting toolkit.
                 </span>
               </h3>
               
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-12 leading-relaxed">
-                Small consulting firms can't afford to retrain teams on new tools. 
-                That's why Lemur works with what you have, making everything more intelligent without changing anything.
+                Lemur integrates seamlessly with the tools you already use daily. No workflow disruption, 
+                no learning curve - just instant intelligence layered on top of your existing processes.
               </p>
 
-              {/* Key metrics for small consultancies */}
+              {/* Key integration benefits */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
                 <motion.div
                   whileHover={{ y: -5 }}
                   className="text-center"
                 >
-                  <div className="text-3xl font-bold text-blue-500 mb-2">2min</div>
+                  <div className="text-3xl font-bold text-blue-500 mb-2">30sec</div>
                   <div className="text-gray-600 dark:text-gray-400">Setup Time</div>
                 </motion.div>
                 <motion.div
@@ -206,8 +153,8 @@ const Integrations: React.FC = () => {
                   whileHover={{ y: -5 }}
                   className="text-center"
                 >
-                  <div className="text-3xl font-bold text-purple-500 mb-2">Instant</div>
-                  <div className="text-gray-600 dark:text-gray-400">Intelligence Boost</div>
+                  <div className="text-3xl font-bold text-purple-500 mb-2">5+</div>
+                  <div className="text-gray-600 dark:text-gray-400">Platform Integrations</div>
                 </motion.div>
               </div>
             </motion.div>

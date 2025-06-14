@@ -85,7 +85,7 @@ const Security: React.FC = () => {
             className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl mx-auto"
           >
             Small firms lose big deals over security questionnaires. 
-            With Lemur, you'll pass every client security review—automatically.
+            Lemur will help you pass every client security review—automatically.
           </motion.p>
         </motion.div>
 
@@ -148,8 +148,8 @@ const Security: React.FC = () => {
               </h3>
               
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-12 leading-relaxed">
-                When enterprise clients ask about your data security practices, you'll have the same answers 
-                as McKinsey and Deloitte—without their IT budgets.
+                When enterprise clients ask about your data security practices, you'll be able to provide 
+                enterprise-grade answers—without enterprise IT budgets.
               </p>
 
               {/* Key benefits for consulting firms */}

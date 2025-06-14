@@ -5,12 +5,12 @@ import Spline from '@splinetool/react-spline';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-white via-gray-50 to-gray-100 dark:from-black dark:via-gray-900 dark:to-black transition-colors duration-500">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-white via-gray-50 to-blue-50/20 dark:from-gray-950 dark:via-gray-900 dark:to-blue-950/20 transition-colors duration-500">
       {/* Premium background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-transparent to-white/80 dark:from-black/50 dark:via-transparent dark:to-black/50 z-10 transition-colors duration-500" />
+      <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-transparent to-white/90 dark:from-gray-950/90 dark:via-transparent dark:to-gray-950/90 z-10 transition-colors duration-500" />
       
       {/* Subtle grid pattern - Apple style */}
-      <div className="absolute inset-0 opacity-[0.02] dark:opacity-[0.02] transition-opacity duration-500" style={{
+      <div className="absolute inset-0 opacity-[0.015] dark:opacity-[0.03] transition-opacity duration-500" style={{
         backgroundImage: `radial-gradient(circle at 1px 1px, rgb(0,0,0) 1px, transparent 0)`,
         backgroundSize: '50px 50px'
       }} />
@@ -40,7 +40,7 @@ const HeroSection: React.FC = () => {
                 transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
                 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-900 dark:text-white leading-[0.9] tracking-tight transition-colors duration-500"
               >
-                Your business.
+                Your consulting buddy.
                 <br />
                 <motion.span 
                   className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent"
@@ -48,7 +48,7 @@ const HeroSection: React.FC = () => {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1, delay: 0.5 }}
                 >
-                  Elevated.
+                  But smarter.
                 </motion.span>
               </motion.h1>
 
@@ -59,8 +59,8 @@ const HeroSection: React.FC = () => {
                 transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
                 className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 leading-relaxed font-normal max-w-2xl transition-colors duration-500"
               >
-                Transform every client conversation into business intelligence. 
-                <span className="text-gray-900 dark:text-white font-medium transition-colors duration-500"> From meeting to proposal in minutes, not days.</span>
+                We're not replacing consultants—we're making them superhuman. 
+                <span className="text-gray-900 dark:text-white font-medium transition-colors duration-500">Lemur amplifies your expertise with perfect memory and instant insights.</span>
               </motion.p>
             </div>
 
@@ -138,13 +138,13 @@ const HeroSection: React.FC = () => {
             >
               <div className="space-y-4">
                 <p className="text-gray-400 dark:text-gray-500 text-sm font-medium tracking-wide uppercase transition-colors duration-500">
-                  Trusted by Leading Firms
+                  The Future of Intelligence
                 </p>
                 <div className="flex items-center space-x-8 text-gray-500 dark:text-gray-600 transition-colors duration-500">
-                  <div className="text-sm font-medium">McKinsey & Company</div>
-                  <div className="text-sm font-medium">Deloitte</div>
-                  <div className="text-sm font-medium">BCG</div>
-                  <div className="text-sm font-medium">Accenture</div>
+                  <div className="text-sm font-medium">AI-Powered</div>
+                  <div className="text-sm font-medium">Adaptive Learning</div>
+                  <div className="text-sm font-medium">Real-Time Intelligence</div>
+                  <div className="text-sm font-medium">Next-Gen Analytics</div>
                 </div>
               </div>
             </motion.div>
@@ -183,37 +183,6 @@ const HeroSection: React.FC = () => {
                   />
                 </div>
               </Suspense>
-              
-              {/* Floating metrics - Apple style */}
-              <motion.div
-                className="absolute top-8 left-8 bg-white/80 dark:bg-black/20 backdrop-blur-2xl border border-gray-200 dark:border-white/10 rounded-2xl px-6 py-4 transition-colors duration-500"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1 }}
-              >
-                <div className="text-gray-900 dark:text-white font-semibold text-lg transition-colors duration-500">3x</div>
-                <div className="text-gray-500 dark:text-gray-400 text-sm transition-colors duration-500">Faster Deal Closure</div>
-              </motion.div>
-              
-              <motion.div
-                className="absolute bottom-8 right-8 bg-white/80 dark:bg-black/20 backdrop-blur-2xl border border-gray-200 dark:border-white/10 rounded-2xl px-6 py-4 transition-colors duration-500"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1.2 }}
-              >
-                <div className="text-gray-900 dark:text-white font-semibold text-lg transition-colors duration-500">500+</div>
-                <div className="text-gray-500 dark:text-gray-400 text-sm transition-colors duration-500">Active Consultants</div>
-              </motion.div>
-
-              <motion.div
-                className="absolute top-1/2 right-4 bg-white/80 dark:bg-black/20 backdrop-blur-2xl border border-gray-200 dark:border-white/10 rounded-2xl px-6 py-4 transition-colors duration-500"
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 1.4 }}
-              >
-                <div className="text-gray-900 dark:text-white font-semibold text-lg transition-colors duration-500">99.5%</div>
-                <div className="text-gray-500 dark:text-gray-400 text-sm transition-colors duration-500">Accuracy</div>
-              </motion.div>
             </motion.div>
           </div>
         </div>

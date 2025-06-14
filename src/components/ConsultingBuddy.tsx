@@ -10,62 +10,6 @@ const ConsultingBuddy: React.FC = () => {
       
       <div className="relative z-10 max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
         
-        {/* Main Content - Apple Style */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className="text-center mb-32"
-        >
-          {/* Subtle intro line */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-gray-500 dark:text-gray-400 text-lg font-medium tracking-wide mb-8"
-          >
-            Human Intelligence + AI Precision
-          </motion.div>
-
-          {/* Main headline - Apple style */}
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-            className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white leading-[0.9] tracking-tight mb-12"
-          >
-            Your consulting buddy.
-            <br />
-            <motion.span 
-              className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.5 }}
-            >
-              But smarter.
-            </motion.span>
-          </motion.h2>
-
-          {/* Simplified subtitle */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-            className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl mx-auto mb-20"
-          >
-            We're not replacing consultants—we're making them superhuman. 
-            <span className="inline-flex items-center space-x-1 mx-1">
-              <img
-                src="/logo_lemur.png"
-                alt="Lemur"
-                className="w-5 h-5 object-contain"
-              />
-              <span>Lemur</span>
-            </span> 
-            amplifies your expertise with perfect memory and instant insights.
-          </motion.p>
-        </motion.div>
 
         {/* Single Feature Showcase - Apple Style */}
         <motion.div
@@ -91,51 +35,6 @@ const ConsultingBuddy: React.FC = () => {
                 <span className="text-green-500"> gets smarter every day</span>.
               </h3>
               
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-12">
-                <motion.div
-                  whileHover={{ y: -5 }}
-                  className="text-center"
-                >
-                  <div className="text-4xl font-bold text-blue-500 mb-2">24/7</div>
-                  <div className="text-gray-600 dark:text-gray-400">Always Available</div>
-                </motion.div>
-                <motion.div
-                  whileHover={{ y: -5 }}
-                  className="text-center"
-                >
-                  <div className="text-4xl font-bold text-purple-500 mb-2">∞</div>
-                  <div className="text-gray-600 dark:text-gray-400">Perfect Memory</div>
-                </motion.div>
-                <motion.div
-                  whileHover={{ y: -5 }}
-                  className="text-center"
-                >
-                  <div className="text-4xl font-bold text-green-500 mb-2">10x</div>
-                  <div className="text-gray-600 dark:text-gray-400">Faster Insights</div>
-                </motion.div>
-              </div>
-
-              {/* Testimonial */}
-              <motion.blockquote
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 1, delay: 0.4 }}
-                className="text-xl font-medium text-gray-700 dark:text-gray-300 mb-6 leading-relaxed italic"
-              >
-                "<span className="inline-flex items-center space-x-1 mx-1">
-                  <img
-                    src="/logo_lemur.png"
-                    alt="Lemur"
-                    className="w-5 h-5 object-contain"
-                  />
-                  <span>Lemur</span>
-                </span> doesn't replace our thinking—it amplifies it."
-              </motion.blockquote>
-              
-              <div className="flex items-center justify-center space-x-3 text-gray-500 dark:text-gray-400">
-                <Users className="h-5 w-5" />
-                <span className="font-medium">Sarah Chen, Partner at McKinsey & Company</span>
-              </div>
             </motion.div>
           </div>
         </motion.div>

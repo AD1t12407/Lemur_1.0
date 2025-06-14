@@ -325,13 +325,13 @@ export default function BrainOverlay() {
                   <Database className="h-8 w-8 text-blue-600 dark:text-blue-400" />
                 </div>
                 <h3 className="text-2xl font-bold text-blue-700 dark:text-blue-300 mb-3">
-                  Knowledge Hub
+                  Knowledge Base
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-6">
                   Store and instantly search your firm's knowledge
                 </p>
                 
-                {/* Metrics */}
+                {/* Activity indicators */}
                 <div className="space-y-4">
                   <motion.div
                     className="flex justify-between items-center p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg"
@@ -340,13 +340,13 @@ export default function BrainOverlay() {
                     }}
                     transition={{ duration: 2, repeat: Infinity }}
                   >
-                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Documents</span>
+                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Knowledge Storage</span>
                     <motion.span 
-                      className="text-sm font-bold text-blue-600"
+                      className="text-sm font-bold text-blue-600 dark:text-blue-400"
                       animate={{ scale: [1, 1.1, 1] }}
                       transition={{ duration: 2, repeat: Infinity }}
                     >
-                      2,847 files
+                      Unlimited
                     </motion.span>
                   </motion.div>
                   <motion.div
@@ -356,19 +356,19 @@ export default function BrainOverlay() {
                     }}
                     transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
                   >
-                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Insights</span>
+                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Search Speed</span>
                     <motion.span 
-                      className="text-sm font-bold text-blue-600"
+                      className="text-sm font-bold text-blue-600 dark:text-blue-400"
                       animate={{ scale: [1, 1.1, 1] }}
                       transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
                     >
-                      15,234 items
+                      Instant
                     </motion.span>
                   </motion.div>
                 </div>
                 
                 <div className="mt-6 flex items-center text-blue-600 dark:text-blue-400 font-medium">
-                  <span>Explore Knowledge</span>
+                  <span>Explore Knowledge Base</span>
                   <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-2 transition-transform duration-300" />
                 </div>
               </div>
@@ -417,14 +417,14 @@ export default function BrainOverlay() {
                     }}
                     transition={{ duration: 2, repeat: Infinity }}
                   >
-                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Active insights</span>
+                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">AI Processing</span>
                     <div className="flex items-center space-x-2">
                       <motion.div
                         className="w-2 h-2 bg-green-500 rounded-full"
                         animate={{ opacity: [0.5, 1, 0.5] }}
                         transition={{ duration: 1.5, repeat: Infinity }}
                       />
-                      <span className="text-sm font-bold text-purple-600">12 generating</span>
+                      <span className="text-sm font-bold text-purple-600 dark:text-purple-400">Always Ready</span>
                     </div>
                   </motion.div>
                   <motion.div
@@ -434,13 +434,13 @@ export default function BrainOverlay() {
                     }}
                     transition={{ duration: 2, repeat: Infinity, delay: 0.7 }}
                   >
-                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Proposals ready</span>
+                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Response Time</span>
                     <motion.span 
-                      className="text-sm font-bold text-purple-600"
+                      className="text-sm font-bold text-purple-600 dark:text-purple-400"
                       animate={{ scale: [1, 1.1, 1] }}
                       transition={{ duration: 2, repeat: Infinity, delay: 0.7 }}
                     >
-                      3 completed
+                      Instant
                     </motion.span>
                   </motion.div>
                 </div>
@@ -480,7 +480,7 @@ export default function BrainOverlay() {
                         </div>
                         <div>
                           <h3 className="text-3xl font-bold text-gray-900 dark:text-white">
-                            Knowledge Hub
+                            Knowledge Base
                           </h3>
                           <p className="text-blue-600 dark:text-blue-400 font-medium">Your firm's memory</p>
                         </div>
@@ -535,7 +535,7 @@ export default function BrainOverlay() {
                       whileTap={{ scale: 0.98 }}
                       className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
                     >
-                      Explore Knowledge Hub
+                      Explore Knowledge Base
                     </motion.button>
                   </div>
                 ) : (

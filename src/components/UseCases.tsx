@@ -51,9 +51,9 @@ const UseCases: React.FC = () => {
   ];
 
   return (
-    <section id="use-cases" className="py-40 bg-white dark:bg-black relative overflow-hidden transition-colors duration-500">
+    <section id="use-cases" className="py-40 bg-white dark:bg-gray-950 relative overflow-hidden transition-colors duration-500">
       {/* Minimal background element */}
-      <div className="absolute top-1/3 left-1/3 w-96 h-96 bg-blue-500/2 dark:bg-blue-500/3 rounded-full blur-3xl"></div>
+      <div className="absolute top-1/3 left-1/3 w-96 h-96 bg-blue-500/2 dark:bg-blue-500/5 rounded-full blur-3xl"></div>
       
       <div className="relative z-10 max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
         
@@ -155,61 +155,10 @@ const UseCases: React.FC = () => {
           viewport={{ once: true }}
           className="mb-20"
         >
-          <div className="bg-white dark:bg-gray-900 backdrop-blur-xl border border-gray-200 dark:border-gray-700 rounded-3xl p-16 text-center shadow-lg">
-            
+          
             {/* Central value proposition */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              className="max-w-4xl mx-auto"
-            >
-              <h3 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
-                Level the playing field.
-                <br />
-                <span className="text-gray-600 dark:text-gray-400">
-                  Punch above your weight.
-                </span>
-              </h3>
-              
-              <p className="text-xl text-gray-600 dark:text-gray-300 mb-12 leading-relaxed">
-                Small consulting firms shouldn't have to choose between personalized service and powerful insights. 
-                With <span className="inline-flex items-center space-x-1 mx-1">
-                  <img
-                    src="/logo_lemur.png"
-                    alt="Lemur"
-                    className="w-5 h-5 object-contain"
-                  />
-                  <span>Lemur</span>
-                </span>, you get both—plus the agility that big firms can only dream of.
-              </p>
-
-              {/* Key benefits for small consultancies */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-                <motion.div
-                  whileHover={{ y: -5 }}
-                  className="text-center"
-                >
-                  <div className="text-3xl font-bold text-blue-500 mb-2">10x</div>
-                  <div className="text-gray-600 dark:text-gray-400">Faster Client Research</div>
-                </motion.div>
-                <motion.div
-                  whileHover={{ y: -5 }}
-                  className="text-center"
-                >
-                  <div className="text-3xl font-bold text-purple-500 mb-2">Personal</div>
-                  <div className="text-gray-600 dark:text-gray-400">Client Relationships</div>
-                </motion.div>
-                <motion.div
-                  whileHover={{ y: -5 }}
-                  className="text-center"
-                >
-                  <div className="text-3xl font-bold text-green-500 mb-2">Big Firm</div>
-                  <div className="text-gray-600 dark:text-gray-400">Intelligence</div>
-                </motion.div>
-              </div>
-            </motion.div>
-          </div>
+            
+          
         </motion.div>
 
         {/* Clean CTA */}
@@ -225,7 +174,7 @@ const UseCases: React.FC = () => {
             className="inline-flex items-center space-x-3 text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors duration-300 cursor-pointer"
           >
             <span className="text-lg font-medium flex items-center space-x-1">
-              <span>See how consultants succeed with</span>
+              <span>Transform your consulting practice with</span>
               <img
                 src="/logo_lemur.png"
                 alt="Lemur"
