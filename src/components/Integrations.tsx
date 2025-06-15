@@ -8,7 +8,8 @@ const Integrations: React.FC = () => {
     { name: 'Microsoft Teams', icon: Video, color: 'text-blue-500 dark:text-blue-400' },
     { name: 'Slack', icon: MessageSquare, color: 'text-purple-500 dark:text-purple-400' },
     { name: 'Zoom', icon: Users, color: 'text-blue-600 dark:text-blue-500' },
-    { name: 'Salesforce', icon: Briefcase, color: 'text-orange-500 dark:text-orange-400' }
+    { name: 'Google Meet', icon: Video, color: 'text-green-500 dark:text-green-400' },
+    { name: 'Google Drive', icon: FileText, color: 'text-yellow-500 dark:text-yellow-400' }
   ];
 
   return (
@@ -68,7 +69,7 @@ const Integrations: React.FC = () => {
         </motion.div>
 
         {/* Integration Icons - Floating Grid */}
-        <div className="grid grid-cols-3 md:grid-cols-5 gap-8 mb-32 max-w-4xl mx-auto justify-items-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-32 max-w-5xl mx-auto justify-items-center">
           {consultingTools.map((tool, index) => (
             <motion.div
               key={tool.name}
